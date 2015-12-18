@@ -1,0 +1,34 @@
+<h1>Users</h1>
+<div id="message_div"class="hide red-text"></div>
+<form id="create_user_form" action="/users" method="POST">
+  <label for="user_first_name">First Name:</label>
+  <input type="text" id="user_first_name" name="user[first_name]" />
+  <br />
+  <label for="user_last_name">Last Name</label>
+  <input type="text" id="user_last_name" name="user[last_name]" />
+  <br />
+  <label for="user_phone_number">Phone Number</label>
+  <input type="phone" id="user_phone_number" name="user[phone_number]" />
+
+  <input type="submit" id="user_add_button" value="Add User" />
+</form>
+<hr />
+<ul id="users_list" class="left">
+</ul>
+
+<div class="right">
+  <h3 id="user_name"><h3>
+  <i id="user_phone"></i>
+</div>
+<form id="edit_user_form" class="hide" action="/users" method="POST">
+  <label for="user_first_name">First Name:</label>
+  <input type="text" id="edit_user_first_name" name="edit_user[first_name]" />
+  <br />
+  <label for="user_last_name">Last Name</label>
+  <input type="text" id="edit_user_last_name" name="edit_user[last_name]" />
+  <br />
+  <label for="edit_user_phone_number">Phone Number</label>
+  <input type="phone" id="edit_user_phone_number" name="edit_user[phone_number]" />
+
+  <input type="submit" id="edit_user_add_button" value="Add edit_User" />
+</form>
